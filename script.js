@@ -5,7 +5,7 @@
 // When click start > hide welcome message and show quiz area
 // Create class in JS for hide/remove .remove
 
-// Questions array
+// Questions/Choices/Answers stored as an array
 let questions = [
     {
         question: "",
