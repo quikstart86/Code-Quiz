@@ -92,3 +92,16 @@ let questions = [
     },
 ]
 
+// Setting other variables
+const timeLeft = document.getElementById(`time`);
+const secondsLeft = 60;
+const questionNumber = 0;
+const maxQuestions = 8;
+const totalScore = 0;
+
+// Function - Time left
+function countdown() {
+
+}
+
+
