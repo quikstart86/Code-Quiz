@@ -6,6 +6,7 @@
 
 const startScreenPage = document.querySelector("#start-screen");
 const startBtn = document.querySelector("#start");
+const askQuestion = document.querySelector("#questions");
 
 
 
@@ -77,28 +78,31 @@ const questionCount = 1;
 
 // Function - Time left
 function countdown() {
-let timerInterval = setInterval(function() {
-  secondsLeft--;
-  timeLeft.textContent = `${timeLeft, secondsLeft}`;
+  let timerInterval = setInterval(function () {
+    secondsLeft--;
+    timeLeft.textContent = `${timeLeft} + ${secondsLeft}`;
 
-  if (secondsLeft <=0){
-    timeLeft.textContent = `Time is up!`;
+    if (secondsLeft <= 0) {
+      clearInterval(timerInterval);
+      timeLeft.textContent = `Time is up!`;
 
-    // If the timer is up, show timer is up
-    finish.textContent = `Time is up!`;
-    gameOver();
+      // If the timer is up, show timer is up
+      finish.textContent = `Time is up!`;
+      gameOver();
 
-  } else if (questionCount >= questions.length +1) {
-    clearInterval(timerInterval);
-    gameOver();
-  }
-}, 1000);
+    } else if (questionCount >= questions.length + 1) {
+      clearInterval(timerInterval);
+      gameOver();
+    }
+  }, 1000);
 }
 
-// click the start button to start the quiz
-startQuizBtn.addEventListener(`click`, newQuiz);
-function startQuiz () {
-  questionNumber = 0
+// click button to start the quiz
+function startQuiz() {
+  startScreenPage.style.display = `none`;
+  questions.style.display = `block`;
+  questionNumber = 0;
   countdown();
   showQuestion(questionNumber);
 }
+
