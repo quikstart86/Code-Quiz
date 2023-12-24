@@ -11,7 +11,7 @@ const askQuestion = document.querySelector("#questions");
 
 
 // ---------Set Questions Array (10 questions)----------
-const questions = [
+const questionList = [
   {
     question: "What country has the highest life expectancy?",
     choices: [`a. Japan`, `b. Hong Kong`, `c. Sweden`, `d. Paraguay`],
@@ -63,7 +63,7 @@ const questions = [
     answer: `a`
   },
 ]
-console.log(questions);
+console.log(questionList);
 
 // Setting other variables
 const timeLeft = document.getElementById(`time`);
@@ -89,7 +89,7 @@ function countdown() {
       finish.textContent = `Time is up!`;
       gameOver();
 
-    } else if (questionCount >= questions.length + 1) {
+    } else if (questionCount >= questionList.length + 1) {
       clearInterval(timerInterval);
       gameOver();
     }
