@@ -19,6 +19,12 @@ const answerBtn3 = document.querySelector('#answerBtn3');
 const answerBtn4 = document.querySelector('#answerBtn4');
 const checkChoice = document.querySelector('#checkChoice');
 
+const endScreen = document.querySelector('endScreen');
+const gameOverText = document.querySelector('gameOverText');
+const finalScore = document.querySelector('finalScore');
+
+const highScores = document.querySelector('highScores'); 
+
 
 // ---------Set Questions Array (10 questions)----------
 const questionList = [
@@ -108,10 +114,20 @@ function countdown() {
 
 // click button to start the quiz
 function startQuiz() {
-  startScreenPage.style.display = `none`;
-  questions.style.display = `block`;
+  welcomeScreen.style.display = `none`;
+  questionPage.style.display = `block`;
   questionNumber = 0;
   countdown();
   showQuestion(questionNumber);
 }
+
+function showQuestion (n) {
+  questionTitle.textContent = questionList[n].question;
+  answerBtn1.textContent = questionSource[n].choices[0];
+  answerBtn2.textContent = questionSource[n].choices[1];
+  answerBtn3.textContent = questionSource[n].choices[2];
+  answerBtn4.textContent = questionSource[n].choices[3];
+  questionNumber = n;
+}
+
 
