@@ -4,27 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coding Quiz</title>
+    <title>Code Quiz</title>
 
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
+    <!-- Link & access to highscores section -->
     <div class="scores"><a href="./highscores.html">View Highscores</a></div>
 
+    <!-- Time section -->
     <div class="timer">Time: <span id="time">0</span></div>
 
-    <div class="wrapper">
-      <div id="start-screen" class="start">
-        <h1>Coding Quiz Challenge</h1>
-        <p>
-          Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          score/time by ten seconds!
+    <!-- Starter screen -->
+    <section class="welcomeScreen" id="welcomeScreen">
+      <div id="start-screen" >
+        
+        <h1>General knowledge Quiz Challenge</h1>
+        <p id="gameInstructions">
+          Try to answer the following general knowledge questions within the time
+          limit. Keep in mind that incorrect answers will penalise your
+          score/time by ten seconds. Good Luck!
         </p>
-        <button id="start">Start Quiz</button>
+        <button class="start" id="startBtn">Start Quiz</button>
       </div>
+    </section>
 
+<!-- Question section -->
       <div id="questions" class="hide">
         <h2 id="question-title"></h2>
         <div id="choices" class="choices"></div>

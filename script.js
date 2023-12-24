@@ -14,54 +14,53 @@ const askQuestion = document.querySelector("#questions");
 const questions = [
   {
     question: "What country has the highest life expectancy?",
-    choices: [`Japan`, `Hong Kong`, `Sweden`, `Paraguay`],
-    answer: `Hong Kong`,
-
+    choices: [`a. Japan`, `b. Hong Kong`, `c. Sweden`, `d. Paraguay`],
+    answer: `b`,
   },
   {
     question: "Who was the Ancient Greek God of the Sun?",
-    choices: [`Apollo`, ``, ``, ``],
-    answer: `Apollo`
+    choices: [`a. Apollo`, `b. Hermes`, `c. Ares`, `d. Poseidon`],
+    answer: `a`
   },
   {
     question: "How many minutes are in a full week?",
-    choices: [`A`, `B`, `C`, `D. 10,080`],
-    answer: `10,080`
+    choices: [`a. 16,800`, `b. 4,860 `, `c. 12,400`, `d. 10,080`],
+    answer: `d`
   },
   {
     question: "How many elements are in the periodic table?",
-    choices: [`A`, `B`, `C. 118`, `D`],
-    answer: `118`
+    choices: [`a. 186`, `b. 140`, `c. 118`, `d. 98`],
+    answer: `c`
   },
   {
     question: "What country drinks the most coffee per capita?",
-    choices: [`A. Finland`, `B`, `C`, `D`],
-    answer: `Finland`
+    choices: [`a. Finland`, `b. England`, `c. France`, `d. Italy`],
+    answer: `a`
   },
   {
     question: "Which planet in the Milky Way is the hottest?",
-    choices: [`A`, `B`, `C. Venus`, `D`],
-    answer: `Venus`
+    choices: [`a. Mars`, `b. Mercury`, `c. Venus`, `d. Jupiter`],
+    answer: `c`
   },
   {
     question: `What company was initially known as "Blue Ribbon Sports"?`,
-    choices: [`A`, `B`, ``, `D`],
-    answer: `Nike`
+    choices: [`a. Donnay`, `b. Reebok`, `c. Addidas`, `d. Nike`],
+    answer: `d`
   },
   {
     question: `What is the world's fastest bird?`,
-    choices: [`something`, `The Peregrine Falcon`, `something`, `something`],
-    answer: `The Peregrine Falcon`
+    choices: [`a. Penguine`, `b. Peregrine Falcon`, `c. Golden Eagle`, `d. Swift`],
+    answer: `b`
   },
   {
     question: "How tall is the Eiffel Tower in Paris?",
-    choices: [`something`, `something`, `something`, `something`],
-    answer: ``
+    choices: [`a. 290m`, `b. 375m`, `c. 330m`, `d. 256m`],
+    answer: `c`
   },
   {
     question: "What is the collective noun for a group of flamingos?",
-    choices: [`something`, `something`, `something`, `something`],
-    answer: `A Flamboyance`
+    choices: [`a. A Flamboyance`, `b. A Bustle`, `c. A Dance`, `d. A Ballet`],
+    answer: `a`
   },
 ]
 console.log(questions);
