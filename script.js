@@ -2,12 +2,22 @@
 // Sudo code sitting in HTML to take up less window space on JS file
 // <--------------- START OF CODE -----------------> //
 
+// Welcome/ start screen query selectors
+const welcomeScreen = document.querySelector('#welcomeScreen');
+const startScreen = document.querySelector("#startScreen");
 
+// Start button & questions page/ question title query selectors
+const startBtn = document.querySelector("#startBtn");
+const questionPage = document.querySelector("#questionPage");
+const questionTitle = document.querySelector('questionTitle');
 
-const startScreenPage = document.querySelector("#start-screen");
-const startBtn = document.querySelector("#start");
-const askQuestion = document.querySelector("#questions");
-
+// Button choice and answer buttons query selectors
+const buttonChoice = document.querySelectorAll('.buttonChoice');
+const answerBtn1 = document.querySelector('#answerBtn1');
+const answerBtn2 = document.querySelector('#answerBtn2');
+const answerBtn3 = document.querySelector('#answerBtn3');
+const answerBtn4 = document.querySelector('#answerBtn4');
+const checkChoice = document.querySelector('#checkChoice');
 
 
 // ---------Set Questions Array (10 questions)----------

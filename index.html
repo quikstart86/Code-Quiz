@@ -18,7 +18,7 @@
 
     <!-- Starter screen -->
     <section class="welcomeScreen" id="welcomeScreen">
-      <div id="start-screen">
+      <div id="startScreen">
         <h1>General knowledge Quiz Challenge</h1>
         <p id="gameInstructions">
           Try to answer the following general knowledge questions within the
@@ -46,13 +46,14 @@
       </div>
     </section>
 
-    <div>
-      <div id="end-screen" class="hide">
-        <h2>All done!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
+    <!-- End section - Finished/Done -->
+    <div class="endScreen" class="endScreen">
+      <div>
+        <h2 class="gameOver">All done!</h2>
+        <p>Your final score is <span id="finalScore"></span>.</p>
         <p>
           Enter initials: <input type="text" id="initials" max="3" />
-          <button id="submit">Submit</button>
+          <button class="button" id="submitBtn">Submit</button>
         </p>
       </div>
 
